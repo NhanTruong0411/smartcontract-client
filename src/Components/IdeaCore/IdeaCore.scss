@@ -1,0 +1,51 @@
+$text-color: #6e84a3;
+
+.serial {
+    font-size: 64px;
+    color: $text-color;
+}
+
+.ideaHeading {
+    font-size: 20px;
+    margin-bottom: 6px;
+
+}
+
+.ideaDescription {
+    font-size: 19px;
+    color: $text-color;
+}
+
+.txt-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join {
+    font-size: 20px;
+}
+
+#btn-lunch {
+    padding: 10px 20px ;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    display: flex;
+    align-items: center;
+
+   
+}
+
+
+#btn-lunch:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+
+
+
