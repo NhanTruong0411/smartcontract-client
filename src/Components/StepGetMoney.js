@@ -9,7 +9,8 @@ import peakImage from './StepGetMoney/image/Peak-DeFi-Optimization.jpg'
 function StepGetMoney() {
 
     return (
-        <Container>
+       <div className="peak">
+            <Container>
             <Row>
                 <Col lg="8">
                     <img src={peakImage} className="peak__img" alt="peak" />
@@ -23,6 +24,7 @@ function StepGetMoney() {
                 </Col>
             </Row>
         </Container>
+       </div>
     )
 }
 
