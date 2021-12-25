@@ -16,7 +16,7 @@ export default function FooterComp() {
       <div className='container mx-auto px-8 py-10'>
         <div>
           {/* section 1 */}
-          <div className="grid lg:grid-cols-6 gap-4 px-10 mb-3">
+          <div className="grid lg:grid-cols-6 gap-4 mb-3">
             {/* 1 */}
             <div className=''>
               {/* brand logo */}
