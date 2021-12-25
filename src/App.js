@@ -5,6 +5,7 @@ import './App.css';
 import DearAll from './Components/DearAll';
 import IdeaCore from './Components/IdeaCore';
 import SaleOff from './Components/SaleOff'
+import StepGetMoney from './Components/StepGetMoney'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <DearAll/>
       <IdeaCore/>
       <SaleOff/>
+      <StepGetMoney/>
       
       {/* <GetStarted />
       <ConnectedProtocols />

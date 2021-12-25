@@ -6,7 +6,8 @@ import './SaleOff/SaleOff.scss'
 
 function SaleOff() {
     return(
-        <Container>
+       <div className="sale-off">
+            <Container>
             <Row>
                 <Col>
                     <Button variant="primary" className="Sale__button">Invest and get 108.77% APY now</Button>
@@ -19,6 +20,7 @@ function SaleOff() {
                 </Col>
             </Row>
         </Container>
+       </div>
     )
 }
 
