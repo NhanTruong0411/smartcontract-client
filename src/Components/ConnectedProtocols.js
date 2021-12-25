@@ -17,7 +17,7 @@ export default function ConnectedProtocols() {
 
           {/* Protocols */}
           <div className='flex justify-center'>
-            <div class="grid lg:grid-cols-5 gap-5 my-8 py-8 px-10">
+            <div className="grid lg:grid-cols-5 gap-5 my-8 py-8 px-10">
               <div className='flex items-center justify-center'>
                 <img src={kyber} className='h-24 md:h-16' alt="kyber-logo" /> 
               </div>
@@ -35,6 +35,7 @@ export default function ConnectedProtocols() {
               </div>
             </div>
           </div>
+          
           
         </div>
       </div>
