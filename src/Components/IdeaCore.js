@@ -6,13 +6,13 @@ import ButtonJoin from './ButtonJoin';
 
 function IdeaItem({ ...ideas }) {
     return (
-        <Col lg={4}>
+        <Col lg={4} sm={12}>
             <Row>
-                <Col lg="auto" className="serial">{ideas.serial}</Col>
-                <Col>
-                    <h3 className="ideaHeading">{ideas.ideaHeading}</h3>
+                <Col lg="auto" xs={2} s className="serial">{ideas.serial}</Col>
+                <Col xs={10}>
+                    <h3  className="ideaHeading">{ideas.ideaHeading}</h3>
                     <p className="ideaDescription">{ideas.ideaDescription}</p>
-                </Col>
+                </Col >
             </Row>
         </Col>
     )
@@ -53,7 +53,7 @@ function IdeaCore() {
                 }
             </Row>
             <Row>
-                <Col lg="12" className="mb-72">
+                <Col lg="12"  className="mb-72">
                     <div className="txt-center">
                         <h2 className="join__heading">Ready to join PEAKDEFI?</h2>
                         <ButtonJoin  >
