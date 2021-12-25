@@ -11,7 +11,7 @@ export default function GetStarted() {
       <div className="my-8 py-8 px-10 grid lg:grid-cols-3 gap-8">
         {/* Create an Account */}
         <div className="flex">
-          <div className="w-3/8 pt-2">
+          <div className="w-3/8 lg:pt-2">
             <h3 className="font-bold text-center text-6xl text-gray-500 px-4">1</h3>
           </div>
           <div className="w-5/8">
@@ -22,7 +22,7 @@ export default function GetStarted() {
 
         {/* Start investing */}
         <div className="flex">
-          <div className="w-3/8 pt-2">
+          <div className="w-3/8 lg:pt-2">
             <h3 className="font-bold text-center text-6xl text-gray-500 px-4">2</h3>
           </div>
           <div className="w-5/8">
@@ -33,7 +33,7 @@ export default function GetStarted() {
         
         {/* Stake PEAK as a Bonus */}
         <div className="flex">
-          <div className="w-3/8 pt-2">
+          <div className="w-3/8 lg:pt-2">
             <h3 className="font-bold text-center text-6xl text-gray-500 px-4">3</h3>
           </div>
           <div className="w-5/8">
