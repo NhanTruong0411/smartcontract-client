@@ -1,0 +1,24 @@
+$font-size: 19px;
+$color: #2c7be5;
+
+.sale-off {
+    margin-bottom: 72px;
+    .Sale__button {
+        font-size: $font-size;
+        font-weight: 500;
+        padding: 12px 16px;
+    }
+
+    .Sale__item {
+        font-size: $font-size;
+        color: $color;
+        font-weight: 400;
+        padding: 12px 16px;
+    }
+
+    .Sale__item:hover {
+        content: "";
+        cursor: pointer;
+        color: #1657af;
+    }
+}
