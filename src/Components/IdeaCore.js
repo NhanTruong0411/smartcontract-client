@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './IdeaCore/IdeaCore.scss'
 import ButtonJoin from './ButtonJoin';
 
-function IdeaItem({ ...ideas}) {
+function IdeaItem({ ...ideas }) {
     return (
         <Col lg={4}>
             <Row>
@@ -51,14 +51,21 @@ function IdeaCore() {
                         />
                     )
                 }
-
             </Row>
             <Row>
-                <Col className="txt-center">
-                    <h2 className="join">Ready to join PEAKDEFI?</h2>
-                    <ButtonJoin  >
-                        Lauch App
-                    </ButtonJoin>
+                <Col lg="12" className="mb-72">
+                    <div className="txt-center">
+                        <h2 className="join__heading">Ready to join PEAKDEFI?</h2>
+                        <ButtonJoin  >
+                            Lauch App
+                        </ButtonJoin>
+                    </div>
+                </Col>
+                <Col lg="12" className="mb-72">
+                    <div className="txt-center">
+                        <h1 className="work__heading">How it works</h1>
+                        <p className="work__desc">There are 3 Ways to build your Wealth through PEAKDEFI.</p>
+                    </div>
                 </Col>
             </Row>
         </Container>

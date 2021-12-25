@@ -1,5 +1,5 @@
 $text-color: #6e84a3;
-
+$font-size:19px;
 .serial {
     font-size: 64px;
     color: $text-color;
@@ -23,8 +23,13 @@ $text-color: #6e84a3;
     align-items: center;
 }
 
-.join {
+.mb-72{
+    margin-bottom: 72px;
+}
+
+.join__heading {
     font-size: 20px;
+    margin-bottom: 18px;
 }
 
 #btn-lunch {
@@ -46,6 +51,15 @@ $text-color: #6e84a3;
     opacity: 0.8;
 }
 
+.work__heading{
+    font-size: 42px;
+    margin-bottom: 18px;
+}
 
+.work__desc{
+    font-size: $font-size;
+    color: $text-color;
+    margin-bottom: 72px;
+}
 
 
