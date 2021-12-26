@@ -47,13 +47,7 @@ function StepGetMoney() {
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                    <div className="txt-center">
-                        <h1>Roadmap</h1>
-                    </div>
-                    </Col>
-                </Row>
+
             </Container>
         </div>
     )

@@ -45,7 +45,7 @@ export default function GetStarted() {
 
       {/* Button */}
       <div className='flex flex-row justify-center mb-5'>
-        <div className='flex flex-row btn bg-gray-700'>Lauch App <span className='pl-3 mt-0.5'><FaArrowRight /></span></div>
+        <div className='flex flex-row btn-tailwind bg-gray-700'>Lauch App <span className='pl-3 mt-0.5'><FaArrowRight /></span></div>
       </div>
 
     </div>
