@@ -92,7 +92,7 @@ export default function FooterComp() {
             <div className="borderOutside border-dashed border-2 border-gray-700 rounded-lg p-7 mt-7">
               <div className="disc-content">
                 {/* heading */}
-                <h5 className='font-bold text-center text-white text-lg'>Disclaimer</h3>
+                <h3 className='font-bold text-center text-white text-lg'>Disclaimer</h3>
                 {/* first content */}
                 <h6 className='font-bold text-white mb-1'>No Advice</h6>
                 <p style={{color: "#6e84a3"}}>
@@ -101,7 +101,7 @@ export default function FooterComp() {
                   It is strongly recommended that you seek professional investment advice before making any investment decision. Any investment decision that you make should be based on an assessment of your risks in consultation with your investment adviser.<br/><br/>
                 </p>
                 {/* second content */}
-                <h6 className='font-bold text-white mb-1'>Risk Warnings</h3>
+                <h6 className='font-bold text-white mb-1'>Risk Warnings</h6>
                 <p style={{color: "#6e84a3"}}>
                   There are significant risks associated with an investment in any products or services provided by PEAKDEFI. Investment in the products and services is intended only for those investors who can accept the risks associated with such an investment (including the risk of a complete loss of investment) and you should ensure you have fully understood such risks before taking any decision to invest.<br/><br/>
                   Past performance does not guarantee future performance and the value of investments can fall as well as rise. No investment strategy is without risk and markets influence investment performance. Investment markets and conditions can change rapidly. Strategies or products can lose money as well as gain. All investors should consider investing only if they can accept the risks associated with investing including a loss of invested capital. No investor should invest without a thorough reading of the risk factors associated with each investment strategy in official documentation provided for each fund or strategy. Investors with questions should additionally seek independent investment advice tailored to their needs, circumstances, and risk tolerances.
