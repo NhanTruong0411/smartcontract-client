@@ -17,3 +17,9 @@
         font-size: 19px;
     }
 }
+
+@media (max-width: 524px) {
+    #mobile-reverse-column {
+        flex-direction: column-reverse;
+    }
+}
