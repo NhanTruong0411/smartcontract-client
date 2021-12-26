@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal';
+import { ethers } from 'ethers';
 
 export default function Header() {
 
     const [modalIsOpen, setModelIsOpen] = useState(false);
+    const [defaultAccount, setDefaultAccount] = useState(null);
+    const [userBalance, setUserBalance] = useState(null);
 
     function openModal() {
             setModelIsOpen(true);
@@ -12,6 +15,38 @@ export default function Header() {
     function closeModal() {
             setModelIsOpen(false);
     }
+
+    function connectWalletHandler() {
+        if(window.ethereum) {
+            window.ethereum.request({
+                method: 'eth_requestAccounts'
+            }).then(result => {
+                accountChangeHandler(result[0]);
+            })
+        } else {
+            console.log("no metamask")
+        }
+    }
+
+    function accountChangeHandler(newAccount) {
+        setDefaultAccount(newAccount);
+        getUserBalance(newAccount.toString());
+    }
+
+    function getUserBalance(address) {
+        window.ethereum.request({
+            method: 'eth_getBalance',
+            params: [address, 'latest']
+        }).then(balance => {
+            setUserBalance(ethers.utils.formatEther(balance));
+        })
+    }
+
+    function chainChangedHandler() {
+        window.location.reload();
+    }
+    window.ethereum.on('accountsChanged', accountChangeHandler);
+    window.ethereum.on('chainChanged', chainChangedHandler)
 
     return (
         <div>
@@ -84,6 +119,11 @@ export default function Header() {
                         </div>
                     </div>
                     <p className='mt-4 text-center text-xs'>PEAKDEFI smart contracts are audited and secured by QuantStamp</p>
+                    <button onClick={connectWalletHandler}>Connect</button>
+                    <div>
+                        <h3>Address: {defaultAccount}</h3>
+                        <h5>Balance: {userBalance}</h5>
+                    </div>
                 </div>
             </div>
         </div>
