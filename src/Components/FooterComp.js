@@ -1,4 +1,5 @@
 import React from 'react'
+import './FooterComp/css/FooterComp.css'
 import logo1 from './FooterComp/image/logo1.png';
 import logo2 from './FooterComp/image/logo2.png';
 import telegram from './FooterComp/image/social/telegram.svg';
@@ -24,12 +25,12 @@ export default function FooterComp() {
                 <img src={logo1} alt="logo-1" className='h-24'/>
               </div>
               {/* link 1 */}
-              <div className='flex flex-row lg:justify-start md:justify-center btn my-3' style={{backgroundColor: "#6e84a3"}}>
-                <img src={logo2} alt="logo-2" className='flex flex-row h-8 px-2' /> <p className='grid content-center'>Build on Ethereum</p>
+              <div className='flex flex-row lg:justify-start md:justify-center btn-tailwind my-3' style={{backgroundColor: "#6e84a3"}}>
+                <img src={logo2} alt="logo-2" className='flex flex-row h-8 px-2' /> <p className='grid content-center mb-0'>Build on Ethereum</p>
               </div>
               {/* link 2 */}
-              <div className='flex flex-row lg:justify-start md:justify-center btn my-3' style={{backgroundColor: "#6e84a3"}}>
-                <img src={logo2} alt="logo-2" className='flex flex-row h-8 px-2' /> <p className='grid content-center'>Craft with Solidity</p>
+              <div className='flex flex-row lg:justify-start md:justify-center btn-tailwind my-3' style={{backgroundColor: "#6e84a3"}}>
+                <img src={logo2} alt="logo-2" className='flex flex-row h-8 px-2' /> <p className='grid content-center mb-0'>Craft with Solidity</p>
               </div>
             </div>
             {/* 2 */}
@@ -38,26 +39,26 @@ export default function FooterComp() {
             {/* 3 */}
             <div>
               <h3 className='uppercase text-xs mt-5' style={{color:"#6e84a3"}}>products</h3>
-              <ul>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Wallet</a></li>
+              <ul className="p-0">
+                <li className='pt-3'><a className="footerLink" href='#'>Wallet</a></li>
               </ul>
             </div>
             {/* 4 */}
             <div>
             <h3 className='uppercase text-xs mt-5' style={{color:"#6e84a3"}}>RESOURCES</h3>
-              <ul>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Whitepaper</a></li>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Help Center</a></li>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Security Audits</a></li>
+              <ul className="p-0">
+                <li className='pt-3'><a className="footerLink" href='#'>Whitepaper</a></li>
+                <li className='pt-3'><a className="footerLink" href='#'>Help Center</a></li>
+                <li className='pt-3'><a className="footerLink" href='#'>Security Audits</a></li>
               </ul>
             </div>
             {/* 5 */}
             <div>
             <h3 className='uppercase text-xs mt-5' style={{color:"#6e84a3"}}>COMPANY</h3>
-              <ul>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Privacy Policy</a></li>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Vision & Mission</a></li>
-                <li className='pt-3'><a href='#' className='text-white hover:text-gray-300 text-sm'>Terms and Conditions</a></li>
+              <ul className="p-0">
+                <li className='pt-3'><a className="footerLink" href='#'>Privacy Policy</a></li>
+                <li className='pt-3'><a className="footerLink" href='#'>Vision & Mission</a></li>
+                <li className='pt-3'><a className="footerLink" href='#'>Terms and Conditions</a></li>
               </ul>
             </div>
           </div>
@@ -68,11 +69,11 @@ export default function FooterComp() {
           <div className="social-media py-3">
             <div className="grid grid-cols-2 gap-5">
               {/* copy right */}
-              <div className='flex flex-row-reverse lg:flex-row'>
+              <div className='leftFlex'>
                 <p style={{color: "#6e84a3"}}>&copy; 2021 Fifth Tech.</p>
               </div>
               {/* social media icons */}
-              <div className='flex flex-row lg:flex-row-reverse'>
+              <div className='rightFlex'>
                 <div className="icon-lists flex flex-row">
                   <a href='#telegram'><img src={telegram} alt="telegram-icon" className="h-6 pl-3" ></img></a>
                   <a href='#discord'><img src={discord} alt="discord-icon" className="h-6 pl-3" ></img></a>
@@ -96,7 +97,7 @@ export default function FooterComp() {
                 <h3 className='font-bold text-white mb-1'>No Advice</h3>
                 <p style={{color: "#6e84a3"}}>
                   The information on this Site is provided for information only and does not constitute, and should not be construed as, investment advice or a recommendation to buy, sell, or otherwise transact in any investment including any products or services or an invitation, offer or solicitation to engage in any investment activity.<br/><br/>
-                  The information on this Site is provided solely on the basis that you will make your own investment decisions and PEAKDEFI does not take account of any investor’s investment objectives, particular needs, or financial situation. In addition, nothing on this Site shall, or is intended to, constitute financial, legal, accounting or tax advice.<br/><br/>
+                  The information on this Site is provided solely on the basis that you will make your own investment decisions and PEAKDEFI does not take account of any investor is investment objectives, particular needs, or financial situation. In addition, nothing on this Site shall, or is intended to, constitute financial, legal, accounting or tax advice.<br/><br/>
                   It is strongly recommended that you seek professional investment advice before making any investment decision. Any investment decision that you make should be based on an assessment of your risks in consultation with your investment adviser.<br/><br/>
                 </p>
                 {/* second content */}
