@@ -45,7 +45,7 @@ export default function Navbar() {
     function chainChangedHandler() {
         window.location.reload();
     }
-    window.ethereum.on('accountsChanged', accountChangeHandler);
+    window.ethereum.on('accountsChanged', connectWalletHandler);
     window.ethereum.on('chainChanged', chainChangedHandler);
 
     return (
