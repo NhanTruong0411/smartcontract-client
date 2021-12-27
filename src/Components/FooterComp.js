@@ -2,6 +2,7 @@ import React from 'react'
 import './FooterComp/css/FooterComp.css'
 import logo1 from './FooterComp/image/logo1.png';
 import logo2 from './FooterComp/image/logo2.png';
+import logo3 from './FooterComp/image/logo3.png';
 import telegram from './FooterComp/image/social/telegram.svg';
 import discord from './FooterComp/image/social/discord.svg';
 import twitter from './FooterComp/image/social/twitter.svg';
@@ -30,7 +31,7 @@ export default function FooterComp() {
               </div>
               {/* link 2 */}
               <div className='flex flex-row lg:justify-start md:justify-center btn-tailwind my-3' style={{backgroundColor: "#6e84a3"}}>
-                <img src={logo2} alt="logo-2" className='flex flex-row h-8 px-2' /> <p className='grid content-center mb-0'>Craft with Solidity</p>
+                <img src={logo3} alt="logo-3" className='flex flex-row h-8 px-2' /> <p className='grid content-center mb-0'>Craft with Solidity</p>
               </div>
             </div>
             {/* 2 */}
