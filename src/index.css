@@ -22,7 +22,7 @@ code {
 }
 
 .header-card {
-  @apply -mt-16 z-50 h-36 rounded-xl flex justify-center transition duration-200 ease-in drop-shadow-2xl hover:-translate-y-2;
+  @apply -mt-16 z-50 h-36 rounded-xl flex justify-center transition duration-200 ease-in drop-shadow-2xl hover:-translate-y-2 cursor-pointer;
 }
 
 .header-card__text {
