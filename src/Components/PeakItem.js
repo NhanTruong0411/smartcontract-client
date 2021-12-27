@@ -2,7 +2,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 function PeakItem({ imgUrl, desc, heading, col1, col2 }) {
     return (
-        <Row className="mb-6 mb-72">
+        <Row className="mb-72">
             <Col lg={col1}>
                 <img src={imgUrl} className="peak__img" alt="peak" />
             </Col>
