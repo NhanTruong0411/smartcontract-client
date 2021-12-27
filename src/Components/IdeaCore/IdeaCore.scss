@@ -62,4 +62,13 @@ $font-size:19px;
     margin-bottom: 72px;
 }
 
+@media (max-width: 524px) {
+    .work__heading{
+        font-size: 32px;
+    }
+    
+    .work__desc{
+        text-align: center;
+    }
+}
 
